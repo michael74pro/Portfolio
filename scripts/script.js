@@ -15,3 +15,21 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     }
 });
+
+const btnCommon = document.getElementById('common');
+const btnGhost = document.getElementById('ghost');
+const btnSubmit = document.getElementById('submit');
+
+function handleBtnCommonClick() {
+    alert('Ваше предложение о найме отправлено!');
+}
+function handleBtnGhostClick() {
+    alert('Резюме сохранено!');
+}
+function handleBtnSubmitClick() {
+    alert('Ваше сообщение отправлено!');
+}
+
+btnCommon.addEventListener('click', handleBtnCommonClick);
+btnGhost.addEventListener('click', handleBtnGhostClick);
+btnSubmit.addEventListener('click', handleBtnSubmitClick);
